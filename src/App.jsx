@@ -14,7 +14,7 @@ function App() {
     formData.append('file', file)
     setLoading(true)
     try {
-      const res = await axios.post('https://your-backend-url.onrender.com/analyze', formData)
+      const res = await axios.post('http://10.214.142.230:10000', formData)
       setData(res.data)
     } catch (err) {
       alert('Error analyzing data')
